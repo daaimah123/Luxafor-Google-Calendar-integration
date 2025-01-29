@@ -2,8 +2,7 @@
   "crons": [
     {
       "path": "/api/update-luxafor",
-      "schedule": "*/5 * * * *"
+      "schedule": "0 9 * * *"
     }
   ]
 }
-

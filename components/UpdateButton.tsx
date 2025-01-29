@@ -1,7 +1,9 @@
+"use client"
+
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 
-export default function Home() {
+export default function UpdateButton() {
   const [status, setStatus] = useState<string | null>(null)
 
   const updateLuxafor = async () => {
@@ -16,11 +18,10 @@ export default function Home() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <h1 className="text-4xl font-bold mb-8">Luxafor Google Calendar Integration</h1>
+    <>
       <Button onClick={updateLuxafor}>Update Luxafor Light</Button>
       {status && <p className="mt-4">{status}</p>}
-    </div>
+    </>
   )
 }
 
