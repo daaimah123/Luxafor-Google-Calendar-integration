@@ -12,7 +12,10 @@ const auth = new JWT({
 })
 
 // Create a Calendar client
-const calendar = google.calendar({ version: "v3", auth })
+const calendar = google.calendar({
+  version: "v3",
+  auth: auth as any, // Type assertion to avoid TypeScript error
+})
 
 export async function checkAvailability(): Promise<"busy" | "available" | "no meetings"> {
   const now = new Date()
@@ -46,4 +49,3 @@ export async function checkAvailability(): Promise<"busy" | "available" | "no me
     throw error
   }
 }
-
