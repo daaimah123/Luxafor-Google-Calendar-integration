@@ -1,0 +1,9 @@
+{
+  "crons": [
+    {
+      "path": "/api/update-luxafor",
+      "schedule": "*/5 * * * *"
+    }
+  ]
+}
+
