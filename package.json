@@ -9,17 +9,17 @@
       "lint": "next lint"
     },
     "dependencies": {
-      "next": "latest",
-      "react": "latest",
-      "react-dom": "latest",
+      "next": "^13.4.19",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
       "googleapis": "^92.0.0",
       "google-auth-library": "^8.0.0"
     },
     "devDependencies": {
-      "@types/node": "latest",
-      "@types/react": "latest",
-      "@types/react-dom": "latest",
-      "typescript": "latest"
+      "@types/node": "^20.5.7",
+      "@types/react": "^18.2.21",
+      "@types/react-dom": "^18.2.7",
+      "typescript": "^5.2.2"
     }
   }
   
